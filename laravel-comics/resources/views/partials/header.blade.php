@@ -1,7 +1,7 @@
 <header>
 
     <div class="upper-nav blue-bg">
-        <div class="container">
+        <div class="wrapper">
             <ul>
                 <li>
                     <a href="#">
@@ -21,7 +21,7 @@
     </div>
 
     <nav>
-        <div class="container nav-container">
+        <div class="wrapper nav-container">
             
             <div class="logo-container">
                 <img src="{{asset('images/dc-logo.png')}}" alt="">

@@ -26,7 +26,8 @@
 
         @include('partials.header')
     
-        @yield('content')
+        @yield('comics-gallery')
+        @yield('buy-nav')
     
     </div>
 
