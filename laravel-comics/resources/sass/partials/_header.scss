@@ -1,6 +1,78 @@
-h1 {
-    color: pink;
+// NAVBAR
 
-    background-color: plum;
-    padding: 3rem;
+.upper-nav {
+    color: white;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    
+    a {
+        font-size: $font-size/2;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        display: inline-block;
+        padding: $spacing/2 $spacing;
+
+        span {
+            vertical-align: middle;
+        }
+        .fas {
+            vertical-align: initial;
+            margin-left: $spacing/3;
+        }
+    }   
+}
+
+nav {
+
+    font-family: $secondary-font-stack;
+    padding: $spacing 0;
+    color: $dark-text-color;
+
+    .nav-container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo-container {
+            width: 60px;
+            max-width: 10%;
+            min-width: 30px;
+    
+            img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            text-transform: uppercase;
+            font-weight: 500;
+
+            a {
+                padding: $spacing/2;
+            }
+        }
+
+        .input-container {
+
+            input {
+                max-width: 100px;
+            }
+        }
+
+    }
+}
+
+
+// HERO SECTION
+
+.hero {
+    background-image: url("/images/jumbotron.jpg");
+    min-height: 250px;
+    background-size: cover;
 }

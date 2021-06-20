@@ -1,6 +1,119 @@
-h1 {
-  color: pink;
-  background-color: plum;
-  padding: 3rem;
+/*  ******** COLORS  ********  */
+
+/*  ********  SPACING  ********  */
+
+/*  ********  FONT FAMILY & SIZE  ********  */
+
+/*  ********  ANIMATION ********  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.blue-bg {
+  background-color: #0282f9;
+}
+
+.blue-bg a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #484848;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.input-container {
+  border-bottom: 2px solid #0282f9;
+  padding: 4px 0;
+}
+
+.input-container input {
+  border: 0;
+}
+
+.upper-nav {
+  color: white;
+}
+
+.upper-nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upper-nav a {
+  font-size: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.upper-nav a span {
+  vertical-align: middle;
+}
+
+.upper-nav a .fas {
+  vertical-align: initial;
+  margin-left: 5.3333333333px;
+}
+
+nav {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 16px 0;
+  color: #484848;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-container .logo-container {
+  width: 60px;
+  max-width: 10%;
+  min-width: 30px;
+}
+
+nav .nav-container .logo-container img {
+  width: 100%;
+}
+
+nav .nav-container ul {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+nav .nav-container ul a {
+  padding: 8px;
+}
+
+nav .nav-container .input-container input {
+  max-width: 100px;
+}
+
+.hero {
+  background-image: url("/images/jumbotron.jpg");
+  min-height: 250px;
+  background-size: cover;
 }
 

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font-stack;
+    font-size: $font-size;
+}
+
+.container {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+
+// BACKGROUND BLUE SECTIONS
+
+.blue-bg {
+    background-color: $primary-color;
+
+    a {
+        color: white;
+    }
+    
+}
+
+
+// LINKS STYLE
+
+a {
+    text-decoration: none;
+    color: $dark-text-color;
+}
+
+
+// NAV UL LIST STYLE
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+// INPUTS STYLE 
+.input-container {
+    border-bottom: 2px solid $primary-color;
+    padding: $spacing/4 0;
+
+    input {
+        border: 0;
+    }
+
+}
