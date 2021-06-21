@@ -75,17 +75,76 @@ ul li {
 h1,
 h2,
 h3,
-h4,
 h5 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: white;
 }
 
-h6 {
+h6,
+h4,
+.advs-tag {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  color: #484848;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .col-1 {
+  flex: 0 0 8.3333333333%;
+}
+
+.row .col-2 {
+  flex: 0 0 16.6666666667%;
+}
+
+.row .col-3 {
+  flex: 0 0 25%;
+}
+
+.row .col-4 {
+  flex: 0 0 33.3333333333%;
+}
+
+.row .col-5 {
+  flex: 0 0 41.6666666667%;
+}
+
+.row .col-6 {
+  flex: 0 0 50%;
+}
+
+.row .col-7 {
+  flex: 0 0 58.3333333333%;
+}
+
+.row .col-8 {
+  flex: 0 0 66.6666666667%;
+}
+
+.row .col-9 {
+  flex: 0 0 75%;
+}
+
+.row .col-10 {
+  flex: 0 0 83.3333333333%;
+}
+
+.row .col-11 {
+  flex: 0 0 91.6666666667%;
+}
+
+.row .col-12 {
+  flex: 0 0 100%;
 }
 
 .upper-nav {
@@ -248,6 +307,65 @@ section.comics-gallery .primary-btn {
   margin-right: 8px;
 }
 
+.comic-page .wrapper {
+  padding: 0 64px;
+}
+
+.comic-page .cover-sect {
+  height: 50px;
+}
+
+.comic-page .cover-sect .comic-cover {
+  width: 15%;
+  max-width: 250px;
+  position: relative;
+  bottom: 150px;
+  border: 2px solid white;
+}
+
+.comic-page .main-sect {
+  padding: 32px 0;
+}
+
+.comic-page .main-sect .description-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comic-page .main-sect .description-box table tr {
+  background-color: #55ba59;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comic-page .main-sect .description-box table tr td {
+  padding: 16px;
+  border: 1px outset #7a7474;
+}
+
+.comic-page .main-sect .description-box table tr td:first-child {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comic-page .main-sect .advs-box {
+  padding-left: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.comic-page .main-sect .advs-box img {
+  width: 100%;
+  display: block !important;
+}
+
+.comic-page .main-sect .advs-box .advs-tag {
+  position: absolute;
+  top: -14px;
+  right: 0;
+}
+
 footer {
   background-image: url("/images/footer-bg.jpg");
   color: #a3a293;
@@ -269,6 +387,7 @@ footer .upper-footer .title-style {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
+  color: #484848;
   color: white;
   font-weight: bold;
 }
