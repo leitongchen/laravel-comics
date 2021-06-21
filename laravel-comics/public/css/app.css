@@ -42,7 +42,6 @@ a {
 
 ul li {
   list-style: none;
-  display: inline-block;
 }
 
 .input-container {
@@ -67,6 +66,12 @@ ul li {
   background-color: #0282f9;
 }
 
+.btn.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #0282f9;
+}
+
 h1,
 h2,
 h3,
@@ -74,10 +79,13 @@ h4,
 h5 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  color: white;
 }
 
 h6 {
+  font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .upper-nav {
@@ -131,6 +139,10 @@ nav .nav-container .logo-container img {
 nav .nav-container ul {
   text-transform: uppercase;
   font-weight: 500;
+}
+
+nav .nav-container ul li {
+  display: inline-block;
 }
 
 nav .nav-container ul a {
@@ -234,5 +246,66 @@ section.comics-gallery .primary-btn {
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 8px;
+}
+
+footer {
+  background-image: url("/images/footer-bg.jpg");
+  color: #a3a293;
+}
+
+footer .upper-footer {
+  background-image: url("/images/dc-logo-bg.png");
+  background-size: 50%;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 64px 0;
+}
+
+footer .upper-footer h6 {
+  color: white;
+}
+
+footer .upper-footer .title-style {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+footer .upper-footer .left-sect {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+
+footer .upper-footer ul li a {
+  color: #a3a293;
+}
+
+footer .below-footer {
+  background-color: #303030;
+  padding: 32px;
+}
+
+footer .below-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .below-footer .social-links {
+  display: flex;
+  align-items: center;
+}
+
+footer .below-footer .social-links ul,
+footer .below-footer .social-links ul li,
+footer .below-footer .social-links h6 {
+  display: inline-block;
+}
+
+footer .below-footer .social-links li,
+footer .below-footer .social-links h6 {
+  padding: 0 4px;
 }
 

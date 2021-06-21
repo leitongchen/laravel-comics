@@ -4,7 +4,7 @@
 @section('page-title', 'DC Comics')
 
 
-@dump($comicsList)        
+{{-- @dump($comicsList)         --}}
 
 
 @section('comics-gallery')
@@ -31,7 +31,7 @@
                                 <div class="cover-container">
                                     <img src="{{ $comic['thumb'] }}" alt="">
                                 </div>
-                                <h6> {{ $comic['series'] }} </h6>
+                                <h5> {{ $comic['series'] }} </h5>
 
                             </div>
 

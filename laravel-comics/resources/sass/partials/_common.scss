@@ -40,10 +40,8 @@ a {
 
 
 // NAV UL LIST STYLE
-
 ul li {
     list-style: none;
-    display: inline-block;
 }
 
 
@@ -75,14 +73,22 @@ ul li {
     background-color: $primary-color;
 }
 
+.btn.secondary-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid $primary-color;
+    
+}
+
 
 // FONT 
 
 h1, h2, h3, h4, h5 {
     font-family: $primary-font-stack;
     text-transform: uppercase;
+    color: white;
 }
 
 h6 {
-    text-transform: uppercase;
+    @include footerTitle;
 }

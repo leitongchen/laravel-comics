@@ -1,0 +1,5 @@
+@mixin footerTitle {
+    font-family: $secondary-font-stack;
+    text-transform: uppercase;
+    font-size: $font-size;
+}

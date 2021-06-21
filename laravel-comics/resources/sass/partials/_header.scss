@@ -53,6 +53,10 @@ nav {
             text-transform: uppercase;
             font-weight: 500;
 
+            li {
+                display: inline-block;
+            }
+            
             a {
                 padding: $spacing/2;
             }

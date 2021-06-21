@@ -19459,7 +19459,14 @@ var app = new Vue({
       link: "#"
     }, {
       text: "Shop",
-      link: "#"
+      link: "#",
+      child: [{
+        text: "Shop DC",
+        link: "#"
+      }, {
+        text: "Shop DC Collectibles",
+        link: "#"
+      }]
     }],
     buyNav: [{
       text: "digital comics",
@@ -19480,6 +19487,56 @@ var app = new Vue({
     }, {
       text: "dc power visa",
       src: "-power-visa.svg",
+      link: "#"
+    }],
+    dcLinks: [{
+      text: "Terms of use",
+      link: "#"
+    }, {
+      text: "Privacy policy",
+      link: "#"
+    }, {
+      text: "Ad choices",
+      link: "#"
+    }, {
+      text: "Advertising",
+      link: "#"
+    }, {
+      text: "Jobs",
+      link: "#"
+    }, {
+      text: "Subscriptions",
+      link: "#"
+    }, {
+      text: "Talent Workshops",
+      link: "#"
+    }, {
+      text: "CPSC Certificates",
+      link: "#"
+    }, {
+      text: "Ratings",
+      link: "#"
+    }, {
+      text: "Shop help",
+      link: "#"
+    }, {
+      text: "Contact us",
+      link: "#"
+    }],
+    sitesLinks: [{
+      text: "DC",
+      link: "#"
+    }, {
+      text: "MAD Magazine",
+      link: "#"
+    }, {
+      text: "DC Kids",
+      link: "#"
+    }, {
+      text: "DC Universe",
+      link: "#"
+    }, {
+      text: "DC Power Visa",
       link: "#"
     }]
   }
