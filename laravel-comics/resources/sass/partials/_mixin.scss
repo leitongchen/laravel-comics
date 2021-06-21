@@ -2,4 +2,15 @@
     font-family: $secondary-font-stack;
     text-transform: uppercase;
     font-size: $font-size;
+    color: $dark-text-color;
+}
+
+@mixin flexJustify {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin inlineList {
+    list-style: none;
+    display: inline-block;
 }

@@ -1,3 +1,5 @@
+// HOMEPAGE
+
 section.comics-gallery {
 
     color: white;
@@ -65,14 +67,14 @@ section.comics-gallery {
 }
 
 
+// secondary nav section on homepage
 .buy-nav {
 
     padding: $spacing*4 0;
 
     ul {
 
-        display: flex;
-        justify-content: space-between;
+        @include flexJustify;
 
         li {
             list-style: none;
@@ -96,4 +98,117 @@ section.comics-gallery {
         }
     }
 
+}
+
+
+
+// COMIC SINGLE PAGE 
+
+.comic-page {
+
+   
+    .wrapper {
+        padding: 0 $spacing*4;
+    }
+    .cover-sect {
+
+        height: 50px;
+
+        .comic-cover {
+            width: 15%;
+            max-width: 250px;
+
+            position: relative;
+            bottom: 150px;
+            border: 2px solid white;
+        }
+    }
+
+    .main-sect {
+        
+        padding: $spacing*2 0;
+
+        // .row > div {
+        //     border: 1px solid black;
+        // }
+        .description-box {
+            
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+
+                tr {
+                    background-color: $available-color;
+
+                    @include flexJustify;
+
+                    td {
+                        padding: $spacing;
+                        border: 1px outset $border-color;
+                    }
+
+                    td:first-child {
+                        flex-grow: 1;
+
+                        @include flexJustify;
+                    }
+                }
+            }
+        }
+
+        .advs-box {
+            // background-color: indianred;
+            padding-left: $spacing;
+            width: 100%;
+
+            position: relative;
+
+            img {
+                width: 100%;
+                display: block !important;
+            }
+
+            .advs-tag {
+                position: absolute;
+                top: -$font-size;
+                right: 0;
+            }
+        }
+    }
+
+    .details-sect {
+
+        padding: $spacing*2 0;
+
+        .row > div {
+            padding: 0 $spacing;
+        }
+
+        h4 {
+            margin-bottom: $spacing*2
+        }
+
+        .details-row {
+            @include flexJustify;
+
+            padding: $spacing 0;
+            border-top: 1px solid $border-color;
+            
+            &:last-child {
+                border-bottom: 1px solid $border-color;
+
+            }
+
+
+            ul li {
+                display: inline-block;
+
+            }
+
+            ul li, span, p {
+                font-size: $font-size/1.3;
+            }
+        }
+    }
 }

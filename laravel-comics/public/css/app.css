@@ -35,6 +35,10 @@ body {
   background-color: #1c1c1c;
 }
 
+.gray-bg {
+  background-color: #f6f6f6;
+}
+
 a {
   text-decoration: none;
   color: #484848;
@@ -83,6 +87,7 @@ h5 {
 
 h6,
 h4,
+h3,
 .advs-tag {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
@@ -90,8 +95,13 @@ h4,
   color: #484848;
 }
 
-h4 {
+h3 {
   font-size: 21px;
+}
+
+h4 {
+  font-size: 18.2px;
+  text-transform: capitalize;
 }
 
 .row {
@@ -340,7 +350,7 @@ section.comics-gallery .primary-btn {
 
 .comic-page .main-sect .description-box table tr td {
   padding: 16px;
-  border: 1px outset #7a7474;
+  border: 1px outset #c4bebe;
 }
 
 .comic-page .main-sect .description-box table tr td:first-child {
@@ -364,6 +374,39 @@ section.comics-gallery .primary-btn {
   position: absolute;
   top: -14px;
   right: 0;
+}
+
+.comic-page .details-sect {
+  padding: 32px 0;
+}
+
+.comic-page .details-sect .row > div {
+  padding: 0 16px;
+}
+
+.comic-page .details-sect h4 {
+  margin-bottom: 32px;
+}
+
+.comic-page .details-sect .details-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-top: 1px solid #c4bebe;
+}
+
+.comic-page .details-sect .details-row:last-child {
+  border-bottom: 1px solid #c4bebe;
+}
+
+.comic-page .details-sect .details-row ul li {
+  display: inline-block;
+}
+
+.comic-page .details-sect .details-row ul li,
+.comic-page .details-sect .details-row span,
+.comic-page .details-sect .details-row p {
+  font-size: 10.7692307692px;
 }
 
 footer {

@@ -20,7 +20,23 @@ Route::get('/', function () {
     $comicsList = [
         'comicsList' => $comicsData
     ];
-    // var_dump($comicsData);
 
     return view('home-gallery', $comicsList);
 })->name('Home Gallery');
+
+
+
+Route::get("/comicbook/{index}", function ($index) {
+    $comicsData = config('comics');
+
+    if (!is_numeric($index) || $index < 0 || $index > count($comicsData) -1) {
+        abort(404, "Non trovato!");
+    }
+
+    $selectedComic = $comicsData[intval($index)];
+
+    return view('comicbook', [
+        "comic" => $selectedComic,
+    ]);
+
+})->name("comicbook");

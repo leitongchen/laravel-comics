@@ -7,7 +7,7 @@
 {{-- @dump($comicsList)         --}}
 
 
-@section('comics-gallery')
+@section('main-content')
 
     <section class="comics-gallery dark-bg">
         <div class="wrapper">
@@ -20,11 +20,11 @@
 
             <ul class="row">
 
-                @foreach($comicsList as $comic)
+                @foreach($comicsList as $key => $comic)
                     
                     <li class="col">
 
-                        <a href="#">
+                        <a href="{{ route('comicbook', ['index' => $key]) }}">
 
                             <div class="card">
                             
@@ -52,9 +52,8 @@
 
 @endsection
 
-
 @section('buy-nav')
-    
+
     <section class="blue-bg buy-nav">
 
         <div class="wrapper">

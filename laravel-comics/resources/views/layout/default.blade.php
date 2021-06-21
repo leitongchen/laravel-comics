@@ -23,10 +23,11 @@
 <body>
 
     <div id="app">
-
+        
         @include('partials.header')
     
-        @yield('comics-gallery')
+        @yield('main-content')
+
         @yield('buy-nav')
 
         @include('partials.footer')
